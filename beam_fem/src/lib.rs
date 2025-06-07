@@ -1,4 +1,6 @@
 use nalgebra::{DMatrix, DVector, SymmetricEigen};
+pub mod turbulence;
+pub use turbulence::generate_turbulent_loads;
 
 #[derive(Debug, Clone, Copy)]
 pub struct Node {
